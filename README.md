@@ -46,7 +46,7 @@ Duino-Coin PWA Companion Link for live Version  [Duino-Coin-PWA-Companion](https
    * Top 10 richest miners
    * XXHASH hashrate
    * Transaction count
-   ## Links
+## Links
    * [Duino-Coin-PWA-Companion](https://cstrsk.de/Duino-Coin-PWA-Companion/ )
    * [CSTRSK](https://cstrsk.de/)
    * [ᕲ Duino-Coin](https://duinocoin.com/)
