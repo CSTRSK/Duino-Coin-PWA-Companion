@@ -1,0 +1,72 @@
+
+/* Minder active dot */
+.active_dot {
+    height: 15px;
+    width: 15px;
+    background-color: #01ff91;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Minder inactive dot */
+.inactive_dot {
+    height: 15px;
+    width: 15px;
+    background-color: #ff1201;
+    border-radius: 50%;
+}
+/* footer and header Background */
+footer,
+header {
+    background: rgb(255, 180, 18);
+    background: radial-gradient(circle, rgba(255, 180, 18, 1) 0%, rgba(255, 65, 18, 1) 50%, rgba(243, 18, 145, 1) 100%);
+}
+/* footer stay please down */
+footer {
+    border-top: solid 1px;
+    width: 100%;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+/* Spacer style */
+.hr {
+    background: rgb(255, 180, 18);
+    background: radial-gradient(circle, rgba(255, 180, 18, 1) 0%, rgba(255, 65, 18, 1) 50%, rgba(243, 18, 145, 1) 100%);
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* User DIV height */
+#user {
+    max-height: 20vh;
+    overflow: auto;
+}
+/* User DIV miners */
+#miners {
+    max-height: 50vh;
+    overflow: auto;
+}
+/* User DIV statistics */
+#statistics {
+    max-height: 20vh;
+    overflow: auto;
+}
+/* Miner Button accordions hover effect  */
+.miner_hover:hover{
+    background: rgb(255, 180, 18);
+    background: radial-gradient(circle, rgba(255, 180, 18, 1) 0%, rgba(255, 65, 18, 1) 50%, rgba(243, 18, 145, 1) 100%);
+}
+
+input{
+    background-color: #000000; 
+    color:#fffdee;
+}
+
+input:hover{
+    background-color: #121212; 
+    color:#fffdee;
+}
