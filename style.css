@@ -61,12 +61,12 @@ footer {
     background: radial-gradient(circle, rgba(255, 180, 18, 1) 0%, rgba(255, 65, 18, 1) 50%, rgba(243, 18, 145, 1) 100%);
 }
 
-input{
+.input{
     background-color: #000000; 
     color:#fffdee;
 }
 
-input:hover{
+.input:hover{
     background-color: #121212; 
     color:#fffdee;
 }
