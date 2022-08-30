@@ -21,11 +21,11 @@ async function registerSW() {
     }
 }
 
-function loadDUCOData(UserName){
+function loadDUCOData(UserName) {
     // DUCO Balance URL
-    const balance_url = 'https://server.duinocoin.com/balances/'+UserName;
+    const balance_url = 'https://server.duinocoin.com/balances/' + UserName;
     // DUCO Miners URL
-    const miners_url = 'https://server.duinocoin.com/miners/'+UserName;
+    const miners_url = 'https://server.duinocoin.com/miners/' + UserName;
     // DUCO Chain Statistics
     const stats_url = 'https://server.duinocoin.com/statistics';
 
@@ -154,11 +154,28 @@ function open_Miner(id) {
     }
 }
 
-// ONWORK 
-const input = document.querySelector('input');
+// Getting Entered User Name from input 
+// Get Input Element By ID
+const username_input = document.getElementById("user_name_input");
+// Add Event Listener to Username Input ID
+username_input.addEventListener("submit", inputSubmit);
+// Listening for Keydown 
+username_input.onkeydown = function (e) {
+    // Submit with ENTER
+    if (e.keyCode == 13) {
+        // submit
+        inputSubmit();
+    }
+};
 
-input.addEventListener('keydown', logKey);
-
-function logKey(e) {
-    loadDUCOData(input.value);
+// Input Submit function
+function inputSubmit() {
+    if (username_input.value != "" || username_input.value == null) {
+        // Submit Username to the REST-API Function
+        loadDUCOData(username_input.value);
+        // Blur Username Input
+        username_input.blur();
+        // Deselect Username Input
+        loadDUCOData.selectionStart = username_input.selectionEnd;
+    } else { }
 }
