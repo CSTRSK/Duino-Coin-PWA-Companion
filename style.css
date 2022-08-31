@@ -61,17 +61,18 @@ footer {
     background: radial-gradient(circle, rgba(255, 180, 18, 1) 0%, rgba(255, 65, 18, 1) 50%, rgba(243, 18, 145, 1) 100%);
 }
 
+/* Input */
 .input{
     background-color: #000000; 
     color:#fffdee;
 }
-
+/* Input hover */
 .input:hover{
     background-color: #121212; 
     color:#fffdee;
 }
 
-/* Center the loader */
+/* Spin loader */
 #spinner {
     display: none;
     position: absolute;
@@ -87,12 +88,12 @@ footer {
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
   }
-  
+  /* Spin loader keyframe 1 */
   @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
   }
-  
+  /* Spin loader keyframe 2 */
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -116,7 +117,7 @@ footer {
     from{ bottom:-100px; opacity:0 } 
     to{ bottom:0; opacity:1 }
   }
-  
+  /* hide dashboard when loading Webpage */
   #dashboard {
     display: none;
   }
