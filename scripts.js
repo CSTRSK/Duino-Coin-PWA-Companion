@@ -22,6 +22,8 @@ async function registerSW() {
 }
 
 function loadDUCOData(UserName) {
+    document.getElementById("dashboard").style.display = "none";
+    document.getElementById("spinner").style.display = "block";
     // DUCO Balance URL
     const balance_url = 'https://server.duinocoin.com/balances/' + UserName;
     // DUCO Miners URL
@@ -136,6 +138,9 @@ function loadDUCOData(UserName) {
                 }
                 // Adding UI stuff to statistics DIV
                 document.getElementById("statistics").innerHTML = stat_html;
+
+                document.getElementById("spinner").style.display = "none";
+                document.getElementById("dashboard").style.display = "block";
             }
         });
 }
